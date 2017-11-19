@@ -1,5 +1,21 @@
+plugins {
+    id 'org.jenkins-ci.jpi' version '0.24.0'
+}
+
 apply plugin: 'groovy'
 apply plugin: 'application'
+
+group = 'org.jenkins-ci.plugins'
+version = '0.0.1-SNAPSHOT'
+description = 'Jenkins colour figlet ascii banner plugin'
+
+jenkinsPlugin {
+    coreVersion = '2.90'
+    displayName = 'Ascii Banner'
+    url = 'https://github.com/razbomi/ascii-banner-plugin/wiki'
+    gitHubUrl = 'https://github.com/razbomi/ascii-banner-plugin'
+    shortName = 'ascii-banner'
+}
 
 repositories {
     jcenter()
