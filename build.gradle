@@ -10,7 +10,7 @@ version = '0.0.1-SNAPSHOT'
 description = 'Jenkins colour figlet ascii banner plugin'
 
 jenkinsPlugin {
-    coreVersion = '2.90'
+    coreVersion = '2.63'
     displayName = 'Ascii Banner'
     url = 'https://github.com/razbomi/ascii-banner-plugin/wiki'
     gitHubUrl = 'https://github.com/razbomi/ascii-banner-plugin'
@@ -18,7 +18,9 @@ jenkinsPlugin {
 }
 
 repositories {
-    jcenter()
+    maven {
+        url 'https://repo.jenkins-ci.org/public/'
+    }
 }
 
 dependencies {

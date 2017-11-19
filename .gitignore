@@ -7,3 +7,6 @@ build/
 # IntelliJ
 .idea/
 *.iml
+
+# Jenkins
+work/
