@@ -1,4 +1,9 @@
+# Gradle
 .gradle/
 .gradletasknamecache/
 build/
 !gradle-wrapper.jar
+
+# IntelliJ
+.idea/
+*.iml
